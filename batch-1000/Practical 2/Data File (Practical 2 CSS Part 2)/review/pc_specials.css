@@ -47,9 +47,16 @@ nav.horizontal ul li a {
 
 
 /* Row Styles */
+.newRow {
+   width: 100%;
+   clear: both;
+}
 
+.newRow::after {
+   content: "";
+   display: block;
 
-
+}
 
 /* Column Styles 
 step 10
