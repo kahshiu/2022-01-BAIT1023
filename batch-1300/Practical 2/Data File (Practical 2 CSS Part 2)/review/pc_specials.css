@@ -68,11 +68,29 @@ div.newRow::after {
 
 
 
-/* Specials Styles */
+/* Specials Styles 
+step 11
+*/
+div.specials {
+   min-height: 400px;
+   border: 1px dashed rgb(71,52,29  );
+}
+
 
 
 
 /* Award Styles */
+#awardList {
+   height:650px;
+   position: relative;
+}
+
+#awardList div {
+   position: absolute;
+   width:30%;
+}
+
+
 
 
 
