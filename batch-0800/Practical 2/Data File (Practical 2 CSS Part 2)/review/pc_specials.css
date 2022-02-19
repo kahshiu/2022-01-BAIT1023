@@ -96,6 +96,12 @@ div.specials {
    
 }
 
+#awardList div.awards{
+position:absolute;
+width:30%;
+
+}
+
 
 /* Footer Styles */
 
