@@ -80,8 +80,8 @@ div.specials {
 
 /* Award Styles */
 #awardList div {
-   min-height: 400px;
-   border: 1px dashed rgb(71,52,29);
+   height: 650px;
+   position: relative
  }
 
 
