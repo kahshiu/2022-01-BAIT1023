@@ -78,8 +78,14 @@ div.newRow::after {
 
 
 
-/* Specials Styles */
+/* Specials Styles 
+step no 10:
+*/
 
+div.specials {
+min-height:400;
+border: 1px dashed outline;
+}
 
 
 /* Award Styles */
