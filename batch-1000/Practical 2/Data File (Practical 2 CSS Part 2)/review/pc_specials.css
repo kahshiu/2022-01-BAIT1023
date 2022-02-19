@@ -78,4 +78,6 @@ step 10
 
 
 /* Footer Styles */
-
+footer {
+   clear:both;
+}
