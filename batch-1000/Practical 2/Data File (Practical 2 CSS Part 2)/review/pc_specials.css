@@ -83,7 +83,8 @@ div.specials {
    height: 650px;
    position: relative;
  }
- #awardList div {
+ #awardList div.awards {
+    position:absolute;
    width:30%
  }
 
