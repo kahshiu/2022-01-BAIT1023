@@ -83,8 +83,8 @@ step no 10:
 */
 
 div.specials {
-min-height:400px;
-border: 1px dashed outline;
+   min-height: 400px;
+    border: 1px dashed rgb(71,52,29);
 }
 
 
