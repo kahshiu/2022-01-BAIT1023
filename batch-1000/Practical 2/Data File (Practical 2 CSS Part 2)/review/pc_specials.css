@@ -81,7 +81,8 @@ div.specials {
 /* Award Styles */
 #awardList div {
    height: 650px;
-   position: relative
+   position: relative;
+   width:30%
  }
 
 #award1{top:80px; left:5%}
