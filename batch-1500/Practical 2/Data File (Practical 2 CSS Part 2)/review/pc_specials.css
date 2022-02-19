@@ -85,6 +85,12 @@ div.specials {
    width: 30%;
 }
 
+#award1 {top: 80px; left:5% }
+#award2 {top: 280px; left:60% }
+#award3 {top: 400px; left: 20% }
+#award4 {top: 630PX; left:45% }
+#award5 {top: 750px; left:5% }
+
 
 /* Footer Styles */
 footer {
