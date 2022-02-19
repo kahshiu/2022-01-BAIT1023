@@ -90,11 +90,11 @@ div.specials {
    width:30%;
 }
 
-#award1 {left:80px; top:5%}
-#award2 {left:20pX; top:60%}
-#award3 {left:400px; top:20%}
-#award4 {left:630pX; top:45%}
-#award5 {left:750px; top:5%}
+#award1 {top:80px; left:5%}
+#award2 {top:280px; left:60%}
+#award3 {top:400px; left:20%}
+#award4 {top:630px; left:45%}
+#award5 {top:750px; left:5%}
 
 
 /* Footer Styles */
