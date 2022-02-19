@@ -80,6 +80,11 @@ div.specials {
    overflow: auto;
 }
 
+#awardList .awards {
+   position: absolute;
+   width: 30%;
+}
+
 
 /* Footer Styles */
 footer {
