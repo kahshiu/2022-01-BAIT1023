@@ -70,7 +70,10 @@ step 10
 
 
 /* Specials Styles */
-
+#awardList div {
+  min-height: 400px;
+  border: 1px dashed rgb(71,52,29);
+}
 
 
 /* Award Styles */
