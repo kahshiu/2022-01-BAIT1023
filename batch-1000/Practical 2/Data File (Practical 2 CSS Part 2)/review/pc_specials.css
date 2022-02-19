@@ -79,9 +79,11 @@ div.specials {
 
 
 /* Award Styles */
-#awardList div {
+#awardList {
    height: 650px;
    position: relative;
+ }
+ #awardList div {
    width:30%
  }
 
