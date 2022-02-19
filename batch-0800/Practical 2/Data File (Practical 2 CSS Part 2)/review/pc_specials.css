@@ -89,7 +89,12 @@ div.specials {
 
 
 /* Award Styles */
-
+#awardList {
+   position: relative;
+   height:165px;
+   overflow: auto;
+   
+}
 
 
 /* Footer Styles */
