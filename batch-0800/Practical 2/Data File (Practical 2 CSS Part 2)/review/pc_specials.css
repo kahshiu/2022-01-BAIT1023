@@ -124,3 +124,6 @@ width:30%;
 
 /* Footer Styles */
 
+footer {
+   clear:both;
+}
