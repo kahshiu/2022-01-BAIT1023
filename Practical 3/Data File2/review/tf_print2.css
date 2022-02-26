@@ -12,17 +12,36 @@
 
    This file contains the printer styles used with the Trusted
    Friends Parents Tips page
-
+testing
 */
 
 
 
 /* Hidden Objects */
+@media print {
+   nav, footer, h1 {display: none}
+   #logo {display:block; width: 100px;}
+   section.tips article header {
+      margin-bottom: 0.2in
+   }
+   section.tips article H1 {
+      font-size:24pt;
+      line-height: 26pt;
+   }
+   aside {
+      background-color: rgb(211,211,211);
+      margin-top: 0.3in;
+   }
+}
 
 
 
 /* Page Box Styles */
-
+@page {
+   margin: 0.5in;
+   width: 8.5in;
+   height: 11in;
+}
 
 
 /* Header Styles */

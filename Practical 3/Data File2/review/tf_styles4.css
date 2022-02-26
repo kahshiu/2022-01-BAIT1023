@@ -23,16 +23,75 @@
 
 /* General Flex Styles */
 
+body {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
 
+#left{
+   flex-grow: 1;
+   flex-shrink: 8;
+   flex-basis: 130px;
+}
+#right{
+   flex-grow: 8;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
+section.tips {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;   
+}
 
+section article {
+   flex-grow: 2;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
+section aside {
+   flex-grow: 1;
+   flex-shrink: 2;
+   flex-basis: 250px;
+}
 
+header ul {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+header ul li {
+
+}
 
 
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
 */
-	
+@media only screen and (max-width: 480px) {
+   nav.vertical ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height:240px;
+   }
+   #left {
+      order: 99;
+   }
+   footer {
+      order: 100;
+   }
+   a#navicon {
+      display: block;
+   }
+   nav.horizontal ul { display: none;} 
+   a#navicon:hover+ul, nav.horizontal ul:hover {
+      display: block;
+   }
+ }	
 
 
 
@@ -41,6 +100,11 @@
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
+@media only screen and (min-width: 481px) {
+   nav.horizontal ul{
+         
+   height:160px
+      }
+}
 
 
