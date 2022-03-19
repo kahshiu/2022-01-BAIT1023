@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <head>
 <title>Day Count</title>
-
+<script src="test.js"></script>
 </head>
 
 <body>
 <div style="font-family:verdana; text-align:center">
-<h1>Countdown to New Year 2021</h1>
+<h1 id=text1></h1>
+<br>
+<span style="font-size: 24px" id="text2"> </span>
+<br>
+<span style="font-size: 24px" id="text3"> </span>
 
-<span style="font-size: 24px"> 
 <script type="text/javascript">
+    
+var text1 = document.getElementById("text1")
+var text2 = document.getElementById("text2")
+var text3 = document.getElementById("text3")
 
-//create current date object
+var p = printText()
+text1.innerHTML = p[0];
+text2.innerHTML = p[1];
+text3.innerHTML = p[2];
 
-
-//calculate daysleft
-
-
-
-// display today's date in "March 12, 2021" format
-
-
-
-// display daysleft until New Year
-
-	  
 
 </script>
-</span> 
 </div>
 </body>
 </html>
