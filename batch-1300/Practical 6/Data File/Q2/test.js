@@ -9,6 +9,9 @@ world
 */
 
 function dtFormat(dt) {
+    var hhNum = dt.getHours();
+    var miNum = dt.getMinutes();
+    var ssNum = dt.getSeconds();
     var mmNum = dt.getMonth();
     var ddNum = dt.getDate();
     var yyyyNum = dt.getFullYear();
@@ -26,12 +29,18 @@ function dtFormat(dt) {
         'Apr', // index 3...
     ]
     
+
     var format1 = ddNum.toString() 
       + "/" + mmNum.toString() 
       + "/" + yyyyNum.toString()
-    var format2 = mmShort[mmNum] 
-      + " " + ddNum.toString() 
-      + ", " + yyyyNum.toString()
+    
+    //MAN KEI: hh:mm:ss, 5min
+    var format2 = mmShort[mmNum] +
+        " " + ddNum.toString() +
+        ", " + yyyyNum.toString() +
+        ", " + hhNum.toString() +
+        ": " + miNum.toString() +
+        ": " + ssNum.toString() 
     return [format1, format2];
 }
 
