@@ -26,7 +26,10 @@ function dtFormat(dt) {
     ]
     
     var mmString = mmShort[mmNum];
-    var format1 = mmString + " " + ddNum.toString() + ", " + yyyyNum.toString();
+    var format1 = mmString 
+      + " " + ddNum.toString() 
+      + ", " + yyyyNum.toString();
+      // SIOK HUI: print details of time hh:mm:ss
     var format2 = ddNum.toString() + "/" + mmNum.toString() + "/" + yyyyNum.toString()
     return [format1, format2];
 }
@@ -52,5 +55,5 @@ function printText(){
     return [text1, text2, text3];
 }
 
-var p = printText()
+// var p = printText()
 // p
