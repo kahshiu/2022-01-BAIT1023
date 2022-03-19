@@ -19,6 +19,9 @@ Mac - 2 ...
     var mmNum = dt.getMonth();
     var ddNum = dt.getDate();
     var yyyyNum = dt.getFullYear();
+    var miNum = dt.getMinutes();
+    var hhNum = dt.getHours();
+    var ssNum = dt.getSeconds();
     
     var mmString = [
         'Jan', // index 0
@@ -38,7 +41,12 @@ Mac - 2 ...
 
     // show hour + minute, WONG YAN ZHI 
     // format: Mar 19, 2022: hh: mm
-    var dtString = mmString2 + " " + ddNum.toString() + ", " + yyyyNum.toString();
+    var dtString = mmString2 
+        + " " + ddNum.toString() 
+        + ", " + yyyyNum.toString() 
+        + ": " + hhNum.toString() 
+        + ": " + miNum.toString() 
+        + ": " + ssNum.toString();
     var dtString2 = ddNum.toString() + "/" + (mmNum+1).toString() + "/" + yyyyNum.toString();
 
     return [dtString, dtString2];

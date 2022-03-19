@@ -13,15 +13,24 @@
 <span style="font-size: 24px" id="text3"> </span>
 
 <script type="text/javascript">
+
     
 var text1 = document.getElementById("text1")
 var text2 = document.getElementById("text2")
 var text3 = document.getElementById("text3")
 
-var p = printText()
-text1.innerHTML = p[0];
-text2.innerHTML = p[1];
-text3.innerHTML = p[2];
+// rerun EVERY SECOND
+
+function rerun() {
+    var p = printText()
+    text1.innerHTML = p[0];
+    text2.innerHTML = p[1];
+    text3.innerHTML = p[2];
+}
+setInterval(rerun, 1000);
+
+
+
 
 
 </script>
