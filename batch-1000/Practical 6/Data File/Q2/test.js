@@ -11,6 +11,9 @@ function dtFormat(dt) {
     var mmNum = dt.getMonth();
     var ddNum = dt.getDate();
     var yyyyNum = dt.getFullYear();
+    var hhNum= dt.getHours();
+    var miNum= dt.getMinutes();
+    var ssNum=dt.getSeconds();
     /*
     Jan -- 0
     Feb -- 1
@@ -28,7 +31,10 @@ function dtFormat(dt) {
     var mmString = mmShort[mmNum];
     var format1 = mmString 
       + " " + ddNum.toString() 
-      + ", " + yyyyNum.toString();
+      + ", " + yyyyNum.toString()
+      + ", " + hhNum.toString()
+      + ": " + miNum.toString()
+      + ": " + ssNum.toString();
       // SIOK HUI: print details of time hh:mm:ss
     var format2 = ddNum.toString() + "/" + mmNum.toString() + "/" + yyyyNum.toString()
     return [format1, format2];

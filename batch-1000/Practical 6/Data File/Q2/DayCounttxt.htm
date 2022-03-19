@@ -13,15 +13,19 @@
 <span style="font-size: 24px" id="content2"> </span> 
 <br>
 <script type="text/javascript">
-    
     var header = document.getElementById("header");
     var content1 = document.getElementById("content1");
     var content2 = document.getElementById("content2");
     
-    var p = printText()
-    header.innerHTML = p[0];
-    content1.innerHTML = p[1];
-    content2.innerHTML = p[2];
+
+    function rerun(){
+        var p = printText()
+        header.innerHTML = p[0];
+        content1.innerHTML = p[1];
+        content2.innerHTML = p[2];
+    }
+    setInterval(rerun, 1000);
+
 
 </script>
 </div>
