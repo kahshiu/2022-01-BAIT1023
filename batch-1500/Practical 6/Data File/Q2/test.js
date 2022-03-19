@@ -16,6 +16,9 @@ function dtFormat(dt) {
     var mmNum = dt.getMonth();
     var ddNum = dt.getDate();
     var yyyyNum = dt.getFullYear();
+    var miNum = dt.getMinutes();
+    var ssNum = dt.getSeconds();
+    var hhNum = dt.getHours();
     /*
     Jan -- 0
     Feb -- 1
@@ -31,9 +34,13 @@ function dtFormat(dt) {
         + "/" + (mmNum + 1).toString().padStart(2, "0")
         + "/" + yyyyNum.toString();
 
+    // hh:mm:ss
     var format2 = mmShort[mmNum]
         + " " + ddNum.toString()
-        + ", " + yyyyNum.toString();
+        + ", " + yyyyNum.toString()
+        + ", " + hhNum.toString().padStart(2, "0")
+        + ": " + miNum.toString().padStart(2, "0")
+        + ": " + ssNum.toString().padStart(2, "0");
 
     return [format1, format2]
 }
@@ -58,6 +65,3 @@ function printText() {
     var text2 = "Only " + diff + " days left until new year";
     return [text0, text1,text2]
 }
-
-var p = printText();
-p
