@@ -77,3 +77,31 @@ function sub(el, rowno){
     var elTot = document.getElementById("totalAmount");
     elTot.value = total.toFixed(2);
 }
+
+
+/* 
+Questions
+1. how to assign event handler on form
+2. how to submit a form
+3. how to prevent a form from submitted
+
+4. confirm box, how to capture user input, true/ false
+5. alert box
+
+6. reload page
+7. print page
+
+8. set focus to elelemtn
+
+
+
+====================
+1. SHIA CHAI FEN
+2. TEE PEI WEN
+3. WONG WEI HAO
+4. JASON LEE
+5. JOSHUA KOH
+6.KHOO QI SOON
+7. LAI CHEE SHENG
+8. CHIU YI SOH
+*/
