@@ -34,3 +34,30 @@ function display(el, rowno){
     elAmount.value = "0.00"
   }
 }
+
+// NOTE: triggered by quantity
+function sub(el, rowno){
+  var selectedIndex = el.selectedIndex; // quantity index
+  //var selectedValue = el.value; // quantity value
+  var rowString = rowno.toString();
+  
+  var elPrice = document.getElementById("Price" + rowString);
+  var elQuantity = document.getElementById("Quantity" + rowString);
+  var elAmount = document.getElementById("Amount" + rowString);
+
+  // now referring to quantity index
+  // 0: 0
+  // 1: 1
+  // 2: 2 ...
+  if(selectedIndex > 0) {
+    //elPrice.value = selectedValue;
+    //elQuantity.disabled = false;
+    var total = calcAmount(elPrice.value, elQuantity.value);
+    elAmount.value = total.toFixed(2); // NOTE: convert to 2 decimal value
+    
+  } else {
+    //elPrice.value = "";
+    //elQuantity.disabled = true;
+    elAmount.value = "0.00"
+  }
+}
