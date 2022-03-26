@@ -1,25 +1,28 @@
 ﻿function calcAmount(priceString,quantityString){
-    var priceNum = Number(priceString);
+    var priceNum = Number(priceString); // convert string to number
     var quantityNum = Number(quantityString);
-    return priceNum * quantityNum;
+    return priceNum * quantityNum; // return numbers
 }
 
 //NOTE: triggered by bookname select dropdown
+// el refers to element triggering action. NOTE "this" on html
+// rowno is hardcoded and passed in from html
 function display(el, rowno){
-    var selectedIndex = el.selectedIndex;
-    var selectedValue = el.value;
+    var selectedIndex = el.selectedIndex; // selectedIndex 0,1,2,3
+    var selectedValue = el.value; // value of selected option
 
-    var rowString = rowno.toString();
-    var elPrice = document.getElementById("Price" + rowString);
+    var rowString = rowno.toString(); // rowno: number to string
+    var elPrice = document.getElementById("Price" + rowString); // grab html element to manipulate later
     var elQuantity = document.getElementById("Quantity" + rowString);
     var elAmount = document.getElementById("Amount" + rowString);
 
+    // index 0:"select an item", no value
     if(selectedIndex > 0){
         elPrice.value = selectedValue;
         elQuantity.disabled = false;
 
         var amt = calcAmount(elPrice.value, elQuantity.value);
-        elAmount.value = amt.toFixed(2);
+        elAmount.value = amt.toFixed(2); // setting decimal to 2 points
     } else {
         elPrice.value = "";
         elQuantity.disabled = true;
