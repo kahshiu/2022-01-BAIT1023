@@ -40,8 +40,8 @@
 </head>
 
 <body style="background-color:lightblue; color:brown">
-   <form name="book" id="book" action="Book_select_latest.html" method="get">
-      <table width="600">
+   <form name="book" id="book" action="Book_select_latest.html" method="get" onclick="console.log('from form')">
+      <table width="600" >
          <tr>
             <td colspan=3>
                <h1 style="margin-bottom:0px">CPS BookShop(M)Sdn.Bhd.</h1>
@@ -57,18 +57,22 @@
                <h4 style="margin-bottom:0px">Order Form - <b>Cash on Delivery</b></h4>
             </td>
             <td align=right>Order Date:</td>
-            <td><input type="text" name="date" id="date" size="10" class=numbers disabled /></td>
+            <td>
+ <input type="text" 
+ name="date" id="date" 
+ size="10" class=numbers disabled /></td>
          </tr>
 
          <tr>
             <td colspan=3>
                <hr>
+               <div id="xxx"></div>
             </td>
          </tr>
 
-         <tr>
+         <tr onclick="console.log('tr name')">
             <td>Customer Name:</td>
-            <td><input type="text" name="customerName" id="customerName" size="30" required /></td>
+            <td><input type="text" name="customerName" id="customerName" size="30" required onclick="console.log('customer name')"/></td>
          </tr>
 
          <tr>
