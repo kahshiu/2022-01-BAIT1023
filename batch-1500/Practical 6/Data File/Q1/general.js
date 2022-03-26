@@ -82,3 +82,35 @@ function sub(el, rowno){
   var total = calcTotal();
   document.getElementById("totalAmount").value = total.toString();
 }
+
+window.onload = function() {
+  // Question1: YEN KHANG
+  // set today's date to document.getElementById("date")
+  // set cursor to focus within document.getElementById("customerName")
+
+
+
+
+}
+
+document.getElementById("book").onsubmit = function() {
+  // question3: LEE YIN HAO 
+  // confirm, alert, 
+  var amount =0 // how to get amount?
+  if(total>0){
+    // confirm
+    var isSubmit = false; // how to grab user feedback?
+    if(isSubmit){}
+    else {}
+  }
+  else {}
+}
+
+  
+function cancelorder () {
+  // question 5: HAN EASON
+  var isCancel = false; // how to grab user feedback? to cancel or not?
+  if(isCancel){}
+  else {}
+  
+}
