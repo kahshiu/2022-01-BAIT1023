@@ -6,9 +6,24 @@ function calcAmount(priceString, quantityString){
   return quantNo * priceNo;
 }
 
+// NOTE: find the elements and total up their value
+function calcTotal() {
+  var rowNo = 3;
+  var total = 0;
+  
+  for(var i = 1; i<=rowNo; i++){
+    var iString = i.toString();
+    var el = document.getElementById("Amount"+iString);
+    var vNum = Number(el.value);
+    total = total + vNum;
+  }
+  return total;
+}
+
 
 // NOTE: el is the one element that triggered "display"
 // rowno is row no of table 1,2,3
+// function is triggered by book name dropdown
 // **press F12 to launch developer tools in chrome
 function display(el, rowno){
   var selectedIndex = el.selectedIndex;
@@ -33,6 +48,9 @@ function display(el, rowno){
     elQuantity.disabled = true;
     elAmount.value = "0.00"
   }
+
+  var total = calcTotal();
+  document.getElementById("totalAmount").value = total.toString();
 }
 
 // NOTE: triggered by quantity
@@ -60,4 +78,7 @@ function sub(el, rowno){
     //elQuantity.disabled = true;
     elAmount.value = "0.00"
   }
+
+  var total = calcTotal();
+  document.getElementById("totalAmount").value = total.toString();
 }
