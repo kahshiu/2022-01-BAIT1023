@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+    You have chosen the following items
+    <table id="displayCart">
+
+    </table>
+</body>
+<script>
+
+var foodSelected = JSON.parse(localStorage.getItem("food"));
+
+var displayCart = document.getElementById("displayCart");
+var html = "";
+for(var i = 0; i<foodSelected.length; i++){
+    var v = foodSelected[i];
+    var temp = '<tr><td>'+v+'</td></tr>'
+    html = html + temp;
+}
+
+displayCart.innerHTML = html;
+</script>
+</html>
