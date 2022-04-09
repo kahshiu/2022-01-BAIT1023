@@ -1,3 +1,20 @@
+var validIdentity = {
+    "happyman": "opendoor",
+    "wong_yan_zhi": "1111",
+    "exin": "2222",
+    "gaaya": "4444",
+    "lim": "5555",
+}
+
+var validRole = {
+    "happyman": "admin",
+    "wong_yan_zhi": "customer",
+    "exin": "customer",
+    "gaaya": "customer",
+    "lim": "customer",
+}
+
+
 function checkLogin() {
     var username = document.getElementById("username") // grab element
     var password = document.getElementById("password") // grab element
@@ -10,6 +27,9 @@ function checkLogin() {
 
     if (is_user && is_password) {
         is_success = true
+        localStorage.setItem('username', username.value); // writing into local storage
+        localStorage.setItem('role', validRole[username.value]);
+        localStorage.setItem('loginTime', new Date().getTime().toString());
     }
     return is_success
 }
@@ -21,6 +41,9 @@ f1.onsubmit = function (e) {
     // either show/ not show warning
     document.getElementById("warning").style.display = result? "none": "block";
 
+    if(result){
+        window.location = "landing.html"
+    }
     // TODO: your other validations, now, return false to prevent form submission
     return false;
 }
