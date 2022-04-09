@@ -14,17 +14,39 @@
 */
 
 /* Transition Styles */
+nav#topLinks a {
+   color: rgb(255,255,255);
+   text-shadow: 1px -1px 1px rgba(0,0,0,1);
+   transform: scale(1,1) translateY(0px);
+   transition: all 1.2s;
+}
+nav#topLinks a:hover {
+   color: rgb(255,183,25);
+   text-shadow: 0px 15px 4px rgba(0,0,0,0.5);
+   transform: scale(2,2) translateY(-15px);
 
+}
 
 
 
 /* Marquee Styles */
-
-
+div#marquee {
+   position:relative
+}
+div#marquee table#filmlist{
+   position:absolute;
+   animation: scroll 50s infinite;
+}
+div#marquee:hover table#filmlist{
+   animation-play-state: paused
+}
 
 
 /* Keyframe Styles */
-  
+@keyframes scroll {
+   0%   {top: 250px;}
+   100% {top: -1300px;}
+ } 
 
 
 
